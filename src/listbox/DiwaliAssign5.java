@@ -21,8 +21,15 @@ System.setProperty("webdriver.chrome.driver", "C:\\Users\\nmadh\\OneDrive\\Deskt
 		WebElement day=driver.findElement(By.xpath("//select[(@id=\"day\")]"));
 		day.click();
 		Thread.sleep(2000);
+		//WebElement ele=driver.findElement(By.xpath("//a[text()='Create New Account']"));
+		//ele.click();
+		//Thread.sleep(2000);
+		//WebElement day=driver.findElement(By.xpath("//select[(@id=\"day\")]"));
+		//day.click();
+		//Thread.sleep(2000);
 		
 		Select obj= new Select(day);
+	
 		obj.selectByValue("3");
 		WebElement a=obj.getFirstSelectedOption();
 		String s=a.getText();
